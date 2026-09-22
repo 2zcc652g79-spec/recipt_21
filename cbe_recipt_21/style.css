@@ -375,6 +375,26 @@ body {
 .info-table .customer-name-val {
   font-weight: 400;
   color: #111827;
+  line-height: 1.35;
+}
+
+.info-table .customer-name-val .name-first-father,
+.info-table .customer-name-val .name-grandfather {
+  white-space: nowrap;
+}
+
+.info-column:last-child .info-table .lbl {
+  width: 28%;
+}
+
+@media (min-width: 640px) {
+  .info-column:last-child .info-table .lbl {
+    width: 38%;
+  }
+
+  .info-table .customer-name-val .mobile-break {
+    display: none;
+  }
 }
 
 .info-table .address-val {
